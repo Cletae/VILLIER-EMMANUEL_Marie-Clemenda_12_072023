@@ -1,0 +1,13 @@
+.aside-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  p {
+    color: #fff;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
