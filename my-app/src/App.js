@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/header/Header";
+import Aside from "./components/aside/Aside";
+import Dashboard from "./Dashboard";
+import { QueryClient, QueryClientProvider } from "react-query";
+import "./App.css";
+
+/**
+ * React query : library simplifies fetch + synchronize data from server.
+ */
+
+const queryClient = new QueryClient(); // instanitiate the query client and provide it in component tree
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //every child component can fetch data:
+    // then define a function in hooks to fetch data from server
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <div className="app">
+          <Header />
+          <div className="app--content">
+            <Aside />
+            <Dashboard />
+          </div>
+        </div>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 
