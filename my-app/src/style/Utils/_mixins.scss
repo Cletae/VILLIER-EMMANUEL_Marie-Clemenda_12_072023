@@ -1,0 +1,14 @@
+// Background-color
+@mixin background-icon($fond: aside) {
+    @if $fond == aside {
+      background-color: $bg;
+    } @else if $fond == fire {
+      background-color: $light-red;
+    } @else if $fond == chicken {
+        background-color: $light-blue;
+    } @else if $fond == apple {
+        background-color: $light-yellow;
+    } @else if $fond == burger {
+        background-color: $light-pink;
+    }
+  }

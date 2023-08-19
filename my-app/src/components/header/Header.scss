@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  height: 91px;
+  background-color: $secondary;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .nav-menu {
+    display: contents;
+
+    .nav-link {
+      color: $bg;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    li, a {
+      text-decoration: none;
+      list-style: none;
+    }
+
+  }
+
+  .logo {
+    height: 62px;
+    width: 178px;
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1230px) {
+    height: 80px;
+  }
+
+}
+
+
+
+
+

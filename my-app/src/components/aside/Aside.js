@@ -1,6 +1,5 @@
 import React from "react";
-import "./Aside.css";
-import GetIcon from "../GetIcon/GetIcon";
+import GetIcon from "../icons/GetIcons";
 
 function Aside() {
   return (
