@@ -1,0 +1,11 @@
+.scoreChart {
+    grid-area: c4;
+    background-color: $light-grey;
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+
+    @media all and (min-width: 1024px) and (max-width: 1230px){
+        width: 100%;
+      }
+}

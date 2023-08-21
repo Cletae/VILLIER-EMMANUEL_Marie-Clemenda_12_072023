@@ -1,0 +1,77 @@
+.dashboard{
+    width: 90%;
+    float: right;
+
+    .user-name{
+        margin-top: 3rem;
+        margin-left: 5rem;
+    }
+
+    .first-name{
+        color: red;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1230px) {
+        width: 93%;
+
+        .user-name, .first-name, h1 {
+            font-size: 2rem;
+        }
+
+        
+      }
+
+}
+
+
+.home-main {
+    display: flex;
+    height: calc(100% - 150px);
+    gap: 30px;
+    align-content: stretch;
+    align-items: stretch;
+
+    .name  {
+        color: $primary;
+    }
+
+    .home-graph {
+        flex-grow: 2;
+        display: grid;
+        grid-template-areas: 
+            'c1 c1 c1'
+            'c2 c3 c4';
+        gap: 30px;
+        grid-template-columns: repeat(3, 30rem);
+        margin-left: 5rem;
+    }
+
+    .graph {
+        position: relative;
+    }
+    
+    .graph-title {
+        font-weight: 500;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        font-size: 1.2rem;
+        width: 135px;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1230px) {
+       .home-graph {
+        grid-template-columns: repeat(3, 20rem);
+       }
+      }
+}
+
+
+
+
+
+
+
+
+
+

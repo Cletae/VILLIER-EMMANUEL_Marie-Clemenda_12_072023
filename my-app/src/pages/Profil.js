@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-
 import logo from "../assets/user_btn.png";
 
 const Profile = () => {

@@ -1,0 +1,31 @@
+// Base
+@import 
+"./Base/global";
+
+// Utils
+@import 
+"./Utils/variables", 
+"./Utils/mixins";
+
+
+// Header & aside
+@import 
+"../components/header/Header.scss",
+"../components/aside/Aside.scss";
+
+
+// Pages
+@import 
+"./Pages/profil",
+"./Pages/home.scss";
+
+// Components
+@import
+"../components/errorMessage/ErrorMessage.scss",
+"../components/charts/dailyActivity/dailyActivity.scss", 
+"../components/charts/averageDuration/averageDuration.scss",
+"../components/charts/statChart/statChart.scss",
+"../components/charts/scoreChart/scoreChart.scss";
+
+@import "./Component/nutricions";
+

@@ -1,0 +1,41 @@
+.userSelection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 10rem; 
+  }
+
+.userSelection_list{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0;
+
+     &-item {
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+         background-color: rgb(240, 240, 240);
+         padding: 5rem 7rem;
+         border-radius: 50px;
+         cursor: pointer; 
+
+         &:hover {
+             transform: scale(1.035);
+             transition: ease 0.3s;
+             box-shadow: 2rem 2rem 5rem rgb(208, 207, 207);
+         }
+     }
+ }
+
+
+ .user-btn {
+    height: 4.5rem;
+  }
+  
+  .userName {
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }

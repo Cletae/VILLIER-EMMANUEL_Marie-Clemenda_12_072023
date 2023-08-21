@@ -1,0 +1,43 @@
+.averageDuration {
+    grid-area: c2;
+    background-color: $primary;
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+    
+    .recharts-surface {
+        width: 30rem;
+        height: 25rem;
+    }
+  
+    .session-label {
+        position: absolute;
+        color: white;
+        z-index: 2;
+        margin-top: 17rem;
+        margin-left: 19px;
+        opacity: 0.5;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1.5rem;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1230px) {
+        width: 100%;
+
+        text {
+            
+        }
+
+        .recharts-surface {
+            width: 20rem;
+        }
+
+        .session-label {
+            letter-spacing: 0.7rem;
+        }
+      }
+}
+
+
+

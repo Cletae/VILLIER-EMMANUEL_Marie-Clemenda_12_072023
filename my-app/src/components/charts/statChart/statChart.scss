@@ -1,0 +1,20 @@
+.statChart {
+    grid-area: c3;
+    background-color: $tertiary;
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+
+    tspan {
+        fill: $bg;
+        font-weight: 500;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1230px) {
+        width: 100%;
+
+        tspan {
+            font-size: 0.6rem;
+        }
+      }
+}

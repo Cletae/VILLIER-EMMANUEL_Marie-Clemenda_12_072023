@@ -1,0 +1,78 @@
+.nutricions {
+    position: relative;
+    right: 3rem;
+  
+    .nutricions__icons { 
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      height: 100%;
+      gap: 1rem;
+      width: 20%;
+      border-radius: 10px;
+  
+          .tag {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        background: #fbfbfb;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 20rem;
+  
+          .tag-text {
+            display: flex;
+            flex-direction: column;
+  
+            .large {
+              font-weight: 600;
+              font-size: 2rem;
+            }
+  
+            .small {
+              font-size: 1.7rem;
+            }
+          }    
+      }
+  
+      .fire {
+        .get-icon {
+          @include background-icon ($fond: fire)
+        }
+      }
+    
+      .chicken {
+        .get-icon {
+          @include background-icon ($fond: chicken)
+        }
+      }
+  
+      .apple {
+        .get-icon {
+          @include background-icon ($fond: apple)
+        }
+      }
+  
+      .burger {
+        .get-icon {
+          @include background-icon ($fond: burger)
+        }
+      }
+    }
+}
+  
+    
+@media all and (min-width: 1024px) and (max-width: 1230px) {
+  .nutricions {
+   .nutricions__icons {
+
+    gap: 3rem;
+
+    .tag {
+      width: 15rem;
+    }
+  } 
+
+  }    
+}  
