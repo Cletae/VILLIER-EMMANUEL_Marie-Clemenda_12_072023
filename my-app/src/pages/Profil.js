@@ -5,8 +5,8 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const SetUserToken = (user, id) => {
-    localStorage.removeItem("accessToken");
-    localStorage.setItem("accessToken", id);
+    // localStorage.removeItem("accessToken");
+    // localStorage.setItem("accessToken", id);
     navigate(`/${user}/${id}`);
   };
 

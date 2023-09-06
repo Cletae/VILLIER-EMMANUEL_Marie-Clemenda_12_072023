@@ -30,7 +30,6 @@ function Home() {
         return console.log("An error accours", err);
       });
   }, [id, isLoading]);
-  console.log(data === undefined);
   if (data === undefined) {
     navigate("/Error");
 
@@ -58,7 +57,6 @@ function Home() {
 
             <section className="nutricions">
               <div className="nutricions__icons">
-
                 <article className="tag fire">
                   <GetIcon className="fire" icon="fire" />
                   <div className="tag-text">
@@ -70,7 +68,7 @@ function Home() {
                 </article>
 
                 <article className="tag chicken">
-                  <GetIcon  icon="chicken" />
+                  <GetIcon icon="chicken" />
                   <div className="tag-text">
                     <span className="large">{data.keyData.proteinCount}g </span>
                     <span className="small">Poteines</span>
